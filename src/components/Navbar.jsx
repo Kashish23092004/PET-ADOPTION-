@@ -1,14 +1,20 @@
 import React, { useEffect, useState } from "react";
 import "../index.css";
-
+import { Link } from "react-router-dom";
+import About from "./About";
+import Petlistings from "./Petlistings";
 const Navbar = () => {
   const navItems = (
     <>
-      <li><a className="font-semibold hover:text-blue-400">HOME</a></li>
+    <Link to=''>
+    <li><a className="font-semibold hover:text-blue-400">HOME</a></li>
+    </Link>
+      <Link to='/about'>
       <li><a className="font-semibold hover:text-blue-400">ABOUT US</a></li>
-      <li><a className="font-semibold hover:text-blue-400">CATS</a></li>
-      <li><a className="font-semibold hover:text-blue-400">DOGS</a></li>
-      <li><a className="font-semibold hover:text-blue-400">VOLUNTEER</a></li>
+      </Link>
+       <Link to='/list'> <li><a className="font-semibold hover:text-blue-400">PET LISTINGS</a></li></Link>
+      <li><a className="font-semibold hover:text-blue-400">PET PROFILE</a></li>
+      <li><a className="font-semibold hover:text-blue-400">Seller Dashboard</a></li>
     </>
   );
 
@@ -32,7 +38,7 @@ const Navbar = () => {
         <div className="navbar text-white">
           <div className="navbar-start">
             <a className="btn btn-ghost normal-case text-2xl font-extrabold tracking-wide">
-              PetShelter
+              Pawsitivity
             </a>
           </div>
 
