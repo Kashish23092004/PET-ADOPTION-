@@ -12,8 +12,8 @@ function App() {
         <Route path="/about" element={<About />} />
     <Route path="/list" element={<Petlistings />} />
     </Routes>
-      <Navbar />
-      <Footer/>
+    <Navbar />
+    <Footer />
     </div>
   )
 }

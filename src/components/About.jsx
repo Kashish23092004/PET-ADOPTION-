@@ -4,30 +4,30 @@ import React from 'react'
 
 const About = () => {
   return (
-    <div>
-        <div className="hero bg-base-200 min-h-screen">
+    <div className=''>
+        <div className="hero bg-base-200 min-h-screen  text-black dark:text-white dark:bg-black">
   <div className="hero-content flex-col lg:flex-row">
     <img
       src="https://images.unsplash.com/photo-1513360371669-4adf3dd7dff8?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y2F0JTIwYW5kJTIwb3duZXJ8ZW58MHx8MHx8fDA%3D"
       className="max-w-lg rounded-lg shadow-2xl"
     />
-    <div>
-      <h1 className="text-5xl px-20 font-bold">Giving Every Pet a Place to Call Home!</h1>
-      <p className="py-6 px-20">
+    <div className=''>
+      <h1 className="text-5xl px-20 font-bold text-black dark:text-white dark:bg-black">Giving Every Pet a Place to Call Home!</h1>
+      <p className="py-6 px-20   text-black dark:text-white ">
         At Pawsitivity, we believe every pet deserves a second chance at life — one filled with love, care, and companionship. Our mission is to connect abandoned and rescued animals with compassionate families ready to open their hearts and homes.
 
 With every adoption, we don’t just give pets a shelter — we give them a family. From street rescues to happy tails, we’re creating a world where no paw is left behind. Join us in spreading kindness, one adoption at a time.
       </p>
-      <button className="btn btn-primary mx-80">Get Started</button>
+      <button className="btn btn-primary mx-80  text-black dark:text-white dark:bg-black">Get Started</button>
     </div>
   </div>
 </div>
 <div className='bg-white'>
 <div className="card w-auto bg-orange-200 card-xl shadow-sm">
-  <div className="card-body">
-    <h2 className=" text-gray-700 text-5xl font-extrabold mb-7 text-center">OUR STORY</h2>
-    <h2 className='font-bold text-3xl  text-slate-800 text-center'> It All Began with Bruno</h2>
-    <p>It all began when our founder rescued a stray puppy named Bruno from a busy roadside. Cold, scared, and hungry, Bruno needed help — and that single act of compassion sparked a movement.
+  <div className="card-body dark:bg-black">
+    <h2 className=" text-gray-700 text-5xl font-extrabold mb-7 text-center dark:text-white dark:bg-black ">OUR STORY</h2>
+    <h2 className='font-bold text-3xl  text-slate-800 text-center  dark:text-white dark:bg-black'> It All Began with Bruno</h2>
+    <p className='text-black dark:text-white dark:bg-black'>It all began when our founder rescued a stray puppy named Bruno from a busy roadside. Cold, scared, and hungry, Bruno needed help — and that single act of compassion sparked a movement.
 
 From that moment, we realized that there are thousands of Brunos out there, waiting for someone to notice, rescue, and give them a chance. That’s how Pawsitivity was born — a platform built not just to adopt pets, but to connect rescuers and adopters across the country.
 
@@ -37,14 +37,14 @@ Together, we’re building a kinder world, one rescue at a time. 🐾</p>
   </div>
 </div>
 </div>
-
-<div className='bg-orange-200 mt-24'>
-<div className="card w-auto bg-orange-200 card-xl shadow-sm">
+<div className='dark:bg-black dark:text-white'>
+<div className='bg-orange-200    mt-24  text-black dark:text-white dark:bg-black'>
+<div className="card w-auto bg-orange-200 card-xl shadow-sm  text-black dark:text-white dark:bg-black" >
   <div className="card-body">
-    <h2 className="text-center text-gray-700 text-5xl font-extrabold mb-7"> Meet the Team — The Hearts Behind the Mission</h2>
+    <h2 className="text-center text-gray-700 text-5xl font-extrabold mb-7  text-black dark:text-white dark:bg-black"> Meet the Team — The Hearts Behind the Mission</h2>
     <div className='flex'>
-        <div className='bg-white'>
-    <p className='  text-slate-700 mb-5  font-extrabold  text-center pt-3'>Ananya Verma – Founder </p>
+        <div className='bg-white dark:bg-black'>
+    <p className='  text-slate-700 mb-5  font-extrabold   text-black dark:text-white dark:bg-black text-center pt-3'>Ananya Verma – Founder </p>
     <div>
         <div className="avatar pl-48">
   <div className="w-24 rounded-full">
@@ -52,12 +52,12 @@ Together, we’re building a kinder world, one rescue at a time. 🐾</p>
   </div>
 </div>
 
-    <p className='px-4'>Ananya's journey began with rescuing a frightened puppy named Bruno — a moment that inspired her to build a platform where every stray has a chance at life. With a background in animal welfare and a heart full of compassion, she leads the mission to connect everyday heroes with loving adopters.
+    <p className='px-4  text-black dark:text-white dark:bg-black'>Ananya's journey began with rescuing a frightened puppy named Bruno — a moment that inspired her to build a platform where every stray has a chance at life. With a background in animal welfare and a heart full of compassion, she leads the mission to connect everyday heroes with loving adopters.
 </p>
 </div>
 </div>
-<div className='bg-white mx-4'>
-      <h3 className='text text-slate-700 mb-5 mt-1 font-extrabold text-center pt-3'>Rohan Mehta – Lead Developer</h3>
+<div className='bg-white mx-4  text-black dark:text-white dark:bg-black'>
+      <h3 className='text text-white mb-5 mt-1 font-extrabold text-center pt-3'>Rohan Mehta – Lead Developer</h3>
       <div>
         <div className="avatar pl-44">
   <div className="w-24 rounded-full">
@@ -65,19 +65,19 @@ Together, we’re building a kinder world, one rescue at a time. 🐾</p>
   </div>
 </div>
 
-    <p className='px-4'>Rohan turned the vision into reality. Passionate about using tech for social good, he built the platform that enables people to easily upload rescued pet details and find loving families for them. He believes every line of code can help save a life.
+    <p className='px-4  text-black dark:text-white dark:bg-black'>Rohan turned the vision into reality. Passionate about using tech for social good, he built the platform that enables people to easily upload rescued pet details and find loving families for them. He believes every line of code can help save a life.
 </p>
 </div>
 </div>
-<div className='bg-white'>
-  <h3 className='font-extrabold  text-slate-700 mb-5 mt-2 text-center pt-3'> Priya Sharma – Adoption Coordinator</h3>
+<div className='bg-white  text-black dark:text-white dark:bg-black'>
+  <h3 className='font-extrabold  text-slate-700 mb-5 mt-2 text-center  dark:text-white dark:bg-black pt-3'> Priya Sharma – Adoption Coordinator</h3>
   <div><div className="avatar pl-44">
   <div className="w-24 rounded-full">
     <img src="https://media.istockphoto.com/id/1327765791/photo/smiling-young-asian-businesswoman-standing.jpg?s=612x612&w=0&k=20&c=ewcogScjnutv6ehMGhWfBOOhbtvbNn3dWoNNywpduTU=" />
   </div>
 </div>
 
-    <p className='px-4'>Priya is the bridge between the street and a safe home. She works closely with rescuers, vets, and adopters to ensure that every pet gets the care and placement they deserve. Her empathy and energy keep the team grounded in its mission.
+    <p className='px-4  text-black dark:text-white dark:bg-black'>Priya is the bridge between the street and a safe home. She works closely with rescuers, vets, and adopters to ensure that every pet gets the care and placement they deserve. Her empathy and energy keep the team grounded in its mission.
 
 </p>
 </div>
@@ -86,6 +86,7 @@ Together, we’re building a kinder world, one rescue at a time. 🐾</p>
   </div>
 </div>
 </div>
+    </div>
     </div>
   )
 }
