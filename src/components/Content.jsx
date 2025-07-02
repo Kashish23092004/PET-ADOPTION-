@@ -3,6 +3,8 @@ import { FaPaw, FaRegHeart } from "react-icons/fa";
 import { IoHomeOutline } from "react-icons/io5";
 import Petimages from './Petimages';
 import { Link } from 'react-router-dom';
+import Footer from './Footer';
+import Navbar from './Navbar';
 
 const Content = () => {
   const [isDark, setIsDark] = useState(false);
@@ -29,6 +31,7 @@ const Content = () => {
 
   return (
     <div className={`${isDark ? 'bg-black text-white' : 'bg-white text-black'} transition-all duration-300`}>
+      <Navbar />
       <div
         className="hero min-h-screen relative"
         style={{
@@ -93,7 +96,6 @@ const Content = () => {
 
       <p className={`text-center text-5xl font-bold m-8 ${isDark ? 'text-white bg-slate-600' : 'text-black bg-gray-200'}`}>READY TO START</p>
       <p className={`text-center mt-0 relative ${isDark ? 'text-white' : 'text-gray-700'}`}>TAKE THE NEXT STEP IN FINDING YOUR NEW BEST FRIEND</p>
-
       <div className='flex flex-wrap justify-center mt-10 px-4 py-10 gap-6'>
         {[
           { icon: <FaPaw />, title: "BROWSE PET", desc: "Explore our diverse selection of animals waiting for home", btn: "Browse", link: 'list' },
@@ -111,6 +113,7 @@ const Content = () => {
           </div>
         ))}
       </div>
+      <Footer />
     </div>
   );
 };

@@ -1,24 +1,27 @@
 import React from 'react'
+import Footer from './Footer'
+import Navbar from './Navbar'
 
 
 
 const About = () => {
   return (
-    <div className=''>
-        <div className="hero bg-base-200 min-h-screen  text-black dark:text-white dark:bg-black">
-  <div className="hero-content flex-col lg:flex-row">
+    <div className=' text-black bg-orange-200 dark:text-white dark:bg-black'>
+      <Navbar />
+        <div className="hero bg-base-200 min-h-screen  bg-orange-200 text-black dark:text-white dark:bg-black">
+  <div className="hero-content flex-col lg:flex-row  bg-orange-200">
     <img
       src="https://images.unsplash.com/photo-1513360371669-4adf3dd7dff8?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y2F0JTIwYW5kJTIwb3duZXJ8ZW58MHx8MHx8fDA%3D"
       className="max-w-lg rounded-lg shadow-2xl"
     />
-    <div className=''>
+    <div className=' bg-orange-200'>
       <h1 className="text-5xl px-20 font-bold text-black dark:text-white dark:bg-black">Giving Every Pet a Place to Call Home!</h1>
       <p className="py-6 px-20   text-black dark:text-white ">
         At Pawsitivity, we believe every pet deserves a second chance at life — one filled with love, care, and companionship. Our mission is to connect abandoned and rescued animals with compassionate families ready to open their hearts and homes.
 
 With every adoption, we don’t just give pets a shelter — we give them a family. From street rescues to happy tails, we’re creating a world where no paw is left behind. Join us in spreading kindness, one adoption at a time.
       </p>
-      <button className="btn btn-primary mx-80  text-black dark:text-white dark:bg-black">Get Started</button>
+      <button className="btn btn-primary mx-80 bg-slate-700 px-5 text-white dark:text-white dark:bg-black">Get Started</button>
     </div>
   </div>
 </div>
@@ -57,7 +60,7 @@ Together, we’re building a kinder world, one rescue at a time. 🐾</p>
 </div>
 </div>
 <div className='bg-white mx-4  text-black dark:text-white dark:bg-black'>
-      <h3 className='text text-white mb-5 mt-1 font-extrabold text-center pt-3'>Rohan Mehta – Lead Developer</h3>
+      <h3 className='text  text-black dark:text-white dark:bg-black mb-5 mt-1 font-extrabold text-center pt-3'>Rohan Mehta – Lead Developer</h3>
       <div>
         <div className="avatar pl-44">
   <div className="w-24 rounded-full">
@@ -87,6 +90,7 @@ Together, we’re building a kinder world, one rescue at a time. 🐾</p>
 </div>
 </div>
     </div>
+    <Footer />
     </div>
   )
 }
