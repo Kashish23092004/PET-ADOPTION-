@@ -4,6 +4,7 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+  darkMode: "class", // ✅ correct key, and placed outside `content`
   theme: {
     extend: {},
   },
@@ -12,3 +13,4 @@ export default {
     themes: ["light"], // 👈 Force light mode
   },
 }
+

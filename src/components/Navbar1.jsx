@@ -3,8 +3,7 @@ import "../index.css";
 import { Link } from "react-router-dom";
 import About from "./About";
 import Petlistings from "./Petlistings";
-import Login from "./login";
-const Navbar = () => {
+const Navbar1 = () => {
   const [theme, settheme] = useState(localStorage.getItem("theme")?localStorage.getItem("theme"):"light")
   const element =document.documentElement;
   useEffect(()=>{
@@ -23,58 +22,45 @@ document.body.classList.remove("dark");
   <>
     <Link to='/'>
       <li>
-        <a className="text-lg md:text-xl font-bold px-3 py-2 hover:text-blue-400  text-white dark:text-white">
+        <a className="text-lg md:text-xl font-bold px-3 py-2 text-black hover:text-blue-400 dark:text-white">
           HOME
         </a>
       </li>
     </Link>
     <Link to='/about'>
       <li>
-        <a className="text-lg md:text-xl font-bold px-3 py-2  text-white hover:text-blue-400 dark:text-white">
+        <a className="text-lg md:text-xl font-bold px-3 py-2  text-black hover:text-blue-400 dark:text-white">
           ABOUT US
         </a>
       </li>
     </Link>
     <Link to='/list'>
       <li>
-        <a className="text-lg md:text-xl font-bold px-3 py-2 text-white hover:text-blue-400 dark:text-white">
+        <a className="text-lg md:text-xl font-bold px-3 py-2 text-black hover:text-blue-400 dark:text-white">
           PET LISTINGS
         </a>
       </li>
     </Link>
     <Link to='/profile'>
     <li>
-      <a className="text-lg md:text-xl font-bold px-3 py-2  text-white hover:text-blue-400 dark:text-white">
+      <a className="text-lg md:text-xl font-bold px-3 py-2  text-black hover:text-blue-400 dark:text-white">
         PET PROFILE
       </a>
-      
     </li>
     </Link>
- 
+  
   </>
 );
 
 
   const [sticky, setSticky] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 0) {
-        setSticky(true);
-      } else {
-        setSticky(false);
-      }
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
   return (
     <>
-      <div className={`max-w-screen-2xl container mx-auto md:px-20 px-4 fixed top-0 left-0 right-0 z-50 ${sticky ? "sticky-navbar shadow-md bg-black bg-opacity-60 duration-300  transition-all ease-in-out" : ""}`}>
+      <div className={`max-w-screen-2xl  bg-white text-black dark:bg-black dark:text-white container mx-auto md:px-20 px-4 fixed top-0 left-0 right-0 z-50 ${sticky ? "sticky-navbar shadow-md bg-black bg-opacity-60 duration-300  transition-all ease-in-out" : ""}`}>
         <div className="navbar text-black dark:text-white">
           <div className="navbar-start">
-            <a className="btn btn-ghost normal-case   text-white text-2xl font-extrabold tracking-wide">
+            <a className="btn btn-ghost normal-case   dark:text-white  text-black text-2xl font-extrabold tracking-wide">
               Pawsitivity
             </a>
           </div>
@@ -88,7 +74,7 @@ document.body.classList.remove("dark");
           <div className="navbar-end">
 
 
-            <label className="swap swap-rotate  text-white mx-10">
+            <label className="swap swap-rotate  dark:text-white text-black mx-10">
   {/* this hidden checkbox controls the state */}
   <input type="checkbox" className="theme-controller" value="synthwave" />
 
@@ -116,12 +102,9 @@ document.body.classList.remove("dark");
       d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z" />
   </svg>
 </label>
-            <button className="btn btn-outline btn-sm  text-white hover:bg-white hover:text-black dark:hover:text-white dark:hover:bg-black transition-all duration-300"
-            onClick={()=>document.getElementById('my_modal_3').showModal()}
-            >
+            <button className="btn btn-outline btn-sm  text-black  dark:text-white hover:bg-white hover:text-black dark:hover:text-white dark:hover:bg-black transition-all duration-300">
               Login
             </button>
-            <Login />
     
           </div>
 
@@ -154,4 +137,4 @@ document.body.classList.remove("dark");
   );
 };
 
-export default Navbar;
+export default Navbar1;
