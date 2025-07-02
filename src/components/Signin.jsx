@@ -2,10 +2,13 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 
 const Signin = () => {
+  const succes =()=>{
+    alert('signup succesful');
+  }
   const [agree, setAgree] = useState(false)
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-white px-4">
+    <div className="min-h-screen flex items-center justify-center text-black bg-white px-4">
       <div className="max-w-md w-full space-y-8">
         <div>
           <h2 className="text-center text-2xl font-bold text-gray-900">Create your account</h2>
@@ -17,15 +20,15 @@ const Signin = () => {
               <input
                 type="text"
                 placeholder="Enter your full name"
-                className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
+                className="w-full px-4 py-3 border text-black border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
               />
             </div>
             <div>
-              <label className="block text-sm font-medium text-gray-700">Email</label>
+              <label className="block text-sm font-medium  text-gray-700">Email</label>
               <input
                 type="email"
                 placeholder="Enter your email"
-                className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
+                className="w-full px-4 py-3 border text-black border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
               />
             </div>
             <div>
@@ -33,15 +36,15 @@ const Signin = () => {
               <input
                 type="password"
                 placeholder="Create a password"
-                className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
+                className="w-full px-4 py-3 border text-black border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
               />
             </div>
             <div>
-              <label className="block text-sm font-medium text-gray-700">Confirm Password</label>
+              <label className="block text-smfont-medium text-gray-700">Confirm Password</label>
               <input
                 type="password"
                 placeholder="Confirm your password"
-                className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
+                className="w-full px-4 py-3 bordertext-black border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
               />
             </div>
           </div>
@@ -66,6 +69,7 @@ const Signin = () => {
               className={`w-full h-12 ${
                 agree ? 'bg-[#44bdf0] hover:bg-[#3aa8da]' : 'bg-[#a6d9ee] cursor-not-allowed'
               } text-black font-semibold rounded-md transition duration-200`}
+              onClick={succes}
             >
               Sign Up
             </button>

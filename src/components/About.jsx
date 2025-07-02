@@ -9,14 +9,14 @@ const About = () => {
     <div className=' text-black bg-orange-200 dark:text-white dark:bg-black'>
       <Navbar />
         <div className="hero bg-base-200 min-h-screen  bg-orange-200 text-black dark:text-white dark:bg-black">
-  <div className="hero-content flex-col lg:flex-row  bg-orange-200">
+  <div className="hero-content flex-col lg:flex-row dark:bg-black bg-orange-200">
     <img
       src="https://images.unsplash.com/photo-1513360371669-4adf3dd7dff8?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y2F0JTIwYW5kJTIwb3duZXJ8ZW58MHx8MHx8fDA%3D"
       className="max-w-lg rounded-lg shadow-2xl"
     />
-    <div className=' bg-orange-200'>
+    <div className=' bg-orange-200  dark:bg-black'>
       <h1 className="text-5xl px-20 font-bold text-black dark:text-white dark:bg-black">Giving Every Pet a Place to Call Home!</h1>
-      <p className="py-6 px-20   text-black dark:text-white ">
+      <p className="py-6 px-20   dark:bg-black text-black dark:text-white ">
         At Pawsitivity, we believe every pet deserves a second chance at life — one filled with love, care, and companionship. Our mission is to connect abandoned and rescued animals with compassionate families ready to open their hearts and homes.
 
 With every adoption, we don’t just give pets a shelter — we give them a family. From street rescues to happy tails, we’re creating a world where no paw is left behind. Join us in spreading kindness, one adoption at a time.
